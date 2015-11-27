@@ -1,0 +1,329 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ear
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0 0;
+  background: #131313 !important;
+  color: #000 !important;
+  padding: 0 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+.grey-fill {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #131313 !important;
+}
+
+body{
+  background-color: #131313;
+  overflow: hidden !important;
+}
+
+
+.nba-circular-crop {
+  background: url('/assets/images/nba.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 250%;
+  width: 480px;
+  height: 480px;
+  margin: auto;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+ // box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+ // -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+ // -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+ border: 10px solid #fff;
+}
+
+.wrap {
+  padding-top: 8%;
+  vertical-align: center;
+}
+
+.main-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+/*.buttons-rotation {
+  -ms-transform: rotate(90deg); 
+  -webkit-transform: rotate(90deg); 
+  transform: rotate(90deg);
+}*/
+
+.buttons-buttom {
+  position: relative;
+  width: 24em;
+  height: 24em;
+  padding: 2.8em;
+  border: dashed 1px;
+  border-radius: 50%;
+  margin: -28.75em auto 0;
+} 
+
+.buttons-buttom a {
+  display: block;
+  position: absolute;
+  top: 50%; left: 52%;
+  width: 4em; height: 4em;
+  margin: -4em;
+}
+
+.buttons-buttom img { display: block; width: 100%; }
+
+/*.buttons-top {
+  position: relative;
+  width: 24em;
+  height: 24em;
+  padding: 2.8em;
+  border: dashed 1px;
+  border-radius: 50%;
+  margin: 1.75em auto 0;
+} 
+
+.buttons-top a {
+  display: block;
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 4em; height: 4em;
+  margin: -2em;
+}
+
+.buttons-top img { display: block; width: 100%; }*/
+/*.deg0 { transform: translate(12em); }*/ /* 12em = half the width of the wrapper */
+/*.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+.deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+.deg180 { transform: translate(-12em); }
+.deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }*/
+
+
+
+.deg0 { transform: translateY(17em); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(45deg) translateX(17em) rotate(-45deg); }
+.deg135 { transform: rotate(135deg) translateX(17em) rotate(-135deg); }
+.deg180 { transform: translateY(-16em); }
+.deg225 { transform: rotate(225deg) translateX(16.5em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translateX(16.5em) rotate(-315deg); }
+
+
+.round-button {
+  width: 85px;
+}
+
+.round-button a {
+  display: block;
+  float: left;
+  width: 100%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  line-height: 1em;
+  margin-top: -0.5em;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.round-button-effects {
+  width: 110%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  overflow: hidden;
+  background: url('/assets/images/effects-background-faded.png'); 
+  background-size: 300%;
+  background-position: 60% 15%;
+}
+
+.round-button-vocal {
+  width: 110%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  overflow: hidden;
+  background: url('/assets/images/vocal-background-faded.png'); 
+  background-size: 300%;
+  background-position: 65% 20%;
+}
+
+.round-button-eq {
+  width: 110%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  overflow: hidden;
+  background: url('/assets/images/eq-background-faded.png'); 
+  background-size: 300%;
+  background-position: 65% 10%;
+}
+
+.round-button-bass {
+  width: 110%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  overflow: hidden;
+  background: url('/assets/images/bass-background-faded.png'); 
+  background-size: 300%;
+  background-position: 37% 43%;
+}
+
+.round-button-random {
+  width: 110%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  overflow: hidden;
+  background: url('/assets/images/random-background-faded.png'); 
+  background-size: 300%;
+  background-position: 50%;
+}
+
+.round-button-melody {
+  width: 110%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  overflow: hidden;
+  background: url('/assets/images/melody-background-faded.png'); 
+  background-size: 300%;
+  background-position: 78% 5%;
+}
+
+span.random-icon {
+  background: url('/assets/images/random-icon.png') no-repeat;
+  background-size: 60%;
+  background-position: 50% 20%;
+  float: left;
+  width: 83px;
+  height: 83px;
+  z-index: 999;
+  text-align: center;
+  color: #fff;
+  font-size: 0.95em;
+  transition: 0.3s ease-in-out;
+}
+
+span.bass-icon {
+  background: url('/assets/images/bass-icon.png') no-repeat;
+  background-size: 60%;
+  background-position: 50% 25%;
+  float: left;
+  width: 83px;
+  height: 83px;
+  z-index: 999;
+  text-align: center;
+  color: #fff;
+  font-size: 0.95em;
+  transition: 0.3s ease-in-out;
+}
+
+span.vocal-icon {
+  background: url('/assets/images/vocal-icon.png') no-repeat;
+  background-size: 60%;
+  background-position: 55% 20%;
+  float: left;
+  width: 83px;
+  height: 83px;
+  z-index: 999;
+  text-align: center;
+  color: #fff;
+  font-size: 0.95em;
+  transition: 0.3s ease-in-out;
+}
+
+span.eq-icon {
+  background: url('/assets/images/eq-icon.png') no-repeat;
+  background-size: 60%;
+  background-position: 55% 20%;
+  float: left;
+  width: 83px;
+  height: 83px;
+  z-index: 999;
+  text-align: center;
+  color: #fff;
+  font-size: 0.95em;
+  transition: 0.3s ease-in-out;
+}
+
+span.effects-icon {
+  background: url('/assets/images/effects-icon.png') no-repeat;
+  background-size: 65%;
+  background-position: 50% 10%;
+  float: left;
+  width: 83px;
+  height: 83px;
+  z-index: 999;
+  text-align: center;
+  color: #fff;
+  font-size: 0.95em;
+  transition: 0.3s ease-in-out;
+}
+
+span.melody-icon {
+  background: url('/assets/images/melody-icon.png') no-repeat;
+  background-size: 60%;
+  background-position: 50% 20%;
+  float: left;
+  width: 83px;
+  height: 83px;
+  z-index: 999;
+  text-align: center;
+  color: #fff;
+  font-size: 0.95em;
+  transition: 0.3s ease-in-out;
+}
+
+span.btn-hover:hover {
+  background-color: rgba(100, 10, 10 , 0.4);
+}
+
+span.btn-text-pos {
+  float: left;
+  width: 85px;
+  height: 83px;
+  z-index: 9999;
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+  margin-top: 65%; 
+}
+
+/*.round-button-effects:hover {
+  background: red;
+}*/
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
