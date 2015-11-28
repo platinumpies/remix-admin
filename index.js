@@ -1,5 +1,5 @@
 var express = require('express');
-var proxy = require('./gulp/proxy');
+var proxy = require('proxy');
 var app = express();
 
 app.set('port', (process.env.PORT || 9001));
