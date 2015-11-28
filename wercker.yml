@@ -4,3 +4,8 @@ build:
     - script:
         name: echo nodejs information
         code: echo "line 2"
+deploy: 
+  steps:
+    - heroku-deploy:
+        key-name: HEROKU
+        app-name: remixadmin        
