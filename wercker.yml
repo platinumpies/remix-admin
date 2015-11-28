@@ -8,4 +8,4 @@ deploy:
   steps:
     - heroku-deploy:
         key-name: HEROKU
-        app-name: remixadmin        
+        app-name: remix-admin        
