@@ -1,0 +1,9 @@
+box: node
+build:
+  steps:
+    - script:
+        name: echo nodejs information
+        code: echo "line 2"
+deploy:
+  steps:
+ 
