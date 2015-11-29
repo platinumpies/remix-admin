@@ -39,7 +39,6 @@ body {
   overflow: hidden !important;
 }
 
-
 .nba-circular-crop {
   background: url('/assets/images/nba.png');
   background-repeat: no-repeat;
@@ -51,10 +50,8 @@ body {
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
- // box-shadow: 0 0 8px rgba(0, 0, 0, .8);
- // -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
- // -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
- border: 10px solid #fff;
+  overflow: hidden;
+  //border: 10px solid #fff;
 }
 
 .wrap {
@@ -78,7 +75,7 @@ body {
   width: 24em;
   height: 24em;
   padding: 2.8em;
-  border: dashed 1px;
+  //border: dashed 1px;
   border-radius: 50%;
   margin: -28.75em auto 0;
 } 
@@ -315,6 +312,11 @@ span.btn-text-pos {
   color: #fff;
   font-size: 1em;
   margin-top: 65%; 
+}
+
+.circular-timer {
+  margin: -28px -27px;
+  //padding-top: 0.02px;
 }
 
 /*.round-button-effects:hover {
