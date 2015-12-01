@@ -13,6 +13,15 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // bower:scss
 // endbower
 
+.stop-scale {
+  min-width: 1200px;
+  max-width: 1700px;
+}
+
+.fixer-margin {
+  margin-top: 1%;
+}
+
 .browsehappy {
   margin: 0 0;
   background: #131313 !important;
@@ -319,6 +328,72 @@ span.btn-text-pos {
   //padding-top: 0.02px;
 }
 
+.user-position {
+  top: 0;
+  left: 0;
+  margin: -235px 10%;
+}
+
+.user {
+  position: absolute; 
+  background: url('/assets/images/user.png');
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: 115%;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 3px solid #000;
+}
+
+.branding-position {
+  top: 0;
+  right: 0;
+  margin: -265px 75%;
+}
+
+.branding {
+  position: absolute; 
+  background: url('/assets/images/branding-nike.png');
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+  background-size: 115%;
+  width: 225px;
+  height: 225px;
+}
+
+.left-side-wrap {
+  margin: 105% 10%;
+}
+
+p.dj {
+  color: white;
+  margin: 1% 35%;
+}
+
+span.name {
+  color: #c03333;
+}
+
+
+.right-side-wrap {
+  margin: 60% 30%;
+}
+
+span.nike-text {
+  color: #c03333;
+  font-size: 0.8em; 
+}
+
+span.nba-text {
+  color: #fff;
+  font-size: 0.8em; 
+}
+
+span.remix-text {
+  color: #c03333;
+  font-size: 0.8em; 
+}
 /*.round-button-effects:hover {
   background: red;
 }*/
