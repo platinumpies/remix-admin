@@ -14,8 +14,8 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // endbower
 
 .stop-scale {
-  min-width: 1200px;
-  max-width: 1700px;
+  min-width: 90em;//1200px !important;
+  max-width: 200em;//1700px !important;
 }
 
 .fixer-margin {
@@ -46,25 +46,43 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 body {
   background-color: #131313;
   overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
+div {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+
 .nba-circular-crop {
-  background: url('/assets/images/nba.png');
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 250%;
-  width: 480px;
-  height: 480px;
+  //background: url('/assets/images/nba.png');
+  //background-repeat: no-repeat;
+  //background-position: 50%;
+  //background-size: 250%;
+  width: 43%;//480px;
+  height: 43%;//480px;
   margin: auto;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  overflow: hidden;
+  //border-radius: 50%;
+  //-webkit-border-radius: 50%;
+  //-moz-border-radius: 50%;
+  overflow: visible;
   //border: 10px solid #fff;
 }
 
 .wrap {
-  padding-top: 8%;
+  padding-top: 6%;
   vertical-align: center;
 }
 
@@ -79,6 +97,135 @@ body {
   transform: rotate(90deg);
 }*/
 
+/*
+.videoWrapper {
+  width: 65%;
+  height: 65%;
+  border-radius: 25% 25% 25% 25%;
+  //border-radius: 125px;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  position: absolute;
+}
+
+#Video5, #Video4, #Video3, #Video2, #Video1{
+  width: 90%;
+  height: 90%;
+  top: 125px; //25%;//-125px;
+  left: 125px; //25%;// -125px;
+  position: absolute;
+}*/
+
+.videoWrapper {
+//#Video5, #Video4, #Video3, #Video2, #Video1{
+  vertical-align: center;
+  margin: auto 2%;
+  height:74%; //240px;
+  width: 42%;//320px;
+  -moz-border-radius:50%;
+  border-radius:50%;
+  overflow:hidden;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  //-webkit-mask-image: url(http://f.cl.ly/items/1e181Q0e3j0L3L3z2j3Z/rect.svg);
+  position: absolute;
+  text-align: center;
+  min-width: 35em;//1200px !important;
+  min-height: 35em;//1200px !important;
+  max-width: 50em;//1200px !important;
+  max-height: 50em;//1200px !important;
+
+}
+
+#Video5, #Video4, #Video3, #Video2, #Video1{
+  top: 0;
+  left:0;
+  margin: -20% -140%;
+  display: inline-block;
+  min-width: 275%;
+  max-width: 275%;
+  position: absolute;
+}
+
+/* TIMER */
+
+.wrapper {
+  width: 100px; /* Set the size of the progress bar */
+  height: 100px;
+  position: absolute; /* Enable clipping */
+  clip: rect(0px, 100px, 100px, 50px); /* Hide half of the progress bar */
+}
+/* Set the sizes of the elements that make up the progress bar */
+.circle {
+ width: 80px;
+ height: 80px;
+ border: 10px solid green;
+ border-radius: 50px;
+ position: absolute;
+ clip: rect(0px, 50px, 100px, 0px);
+}
+
+/* Using the data attributes for the animation selectors. */
+/* Base settings for all animated elements */
+div[data-anim~=base] {
+    -webkit-animation-iteration-count: 1;  /* Only run once */
+    -webkit-animation-fill-mode: forwards; /* Hold the last keyframe */
+    -webkit-animation-timing-function:linear; /* Linear animation */
+}
+
+.wrapper-circle[-anim~=wrapper] {
+    -webkit-animation-duration: 0.01s; /* Complete keyframes asap */
+    -webkit-animation-delay: 3s; /* Wait half of the animation */
+    -webkit-animation-name: close-wrapper; /* Keyframes name */
+}
+
+
+
+.circle[data-anim~=left] {
+    -webkit-animation-duration: 6s; /* Full animation time */
+    -webkit-animation-name: left-spin;
+}
+
+
+.circle[data-anim~=right] {
+    -webkit-animation-duration: 3s; /* Half animation time */
+    -webkit-animation-name: right-spin;
+}
+
+/* Rotate the right side of the progress bar from 0 to 180 degrees */
+@-webkit-keyframes right-spin {
+   from {
+     -webkit-transform: rotate(0deg);
+   }
+   to {
+     -webkit-transform: rotate(180deg);
+   }
+  }
+/* Rotate the left side of the progress bar from 0 to 360 degrees */
+@-webkit-keyframes left-spin {
+   from {
+     -webkit-transform: rotate(0deg);
+   }
+   to {
+     -webkit-transform: rotate(360deg);
+   }
+  }
+/* Set the wrapper clip to auto, effectively removing the clip */
+@-webkit-keyframes close-wrapper {
+   to {
+     clip: rect(auto, auto, auto, auto);
+   }
+  }
+
+      
+#round-timer {
+  width: 70%;
+  height: 70%;
+}
+
+#round-timer > svg {
+  width: 100%;
+  display: block;
+}
+
 .buttons-buttom {
   position: relative;
   width: 24em;
@@ -87,14 +234,17 @@ body {
   //border: dashed 1px;
   border-radius: 50%;
   margin: -28.75em auto 0;
+  z-index: 2;
+
 } 
 
 .buttons-buttom a {
   display: block;
   position: absolute;
-  top: 50%; left: 52%;
-  width: 4em; height: 4em;
-  margin: -4em;
+  top: 205%; left: 28%;//34%; //40 50
+  width: 5em; 
+  height: 5em;
+  //margin: -4em;
 }
 
 .buttons-buttom img { display: block; width: 100%; }
@@ -116,7 +266,7 @@ body {
   width: 4em; height: 4em;
   margin: -2em;
 }
-
+/*
 .buttons-top img { display: block; width: 100%; }*/
 /*.deg0 { transform: translate(12em); }*/ /* 12em = half the width of the wrapper */
 /*.deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
@@ -127,16 +277,16 @@ body {
 
 
 
-.deg0 { transform: translateY(17em); } /* 12em = half the width of the wrapper */
-.deg45 { transform: rotate(45deg) translateX(17em) rotate(-45deg); }
-.deg135 { transform: rotate(135deg) translateX(17em) rotate(-135deg); }
-.deg180 { transform: translateY(-16em); }
-.deg225 { transform: rotate(225deg) translateX(16.5em) rotate(-225deg); }
-.deg315 { transform: rotate(315deg) translateX(16.5em) rotate(-315deg); }
+.deg0 { transform: translateY(25em); } /* 12em = half the width of the wrapper */ //17 25em
+.deg45 { transform: rotate(45deg) translateX(25em) rotate(-45deg); } //17 25em 
+.deg135 { transform: rotate(135deg) translateX(25em) rotate(-135deg); } //17 25em
+.deg180 { transform: translateY(-24.75em); } //-16.5 -24.75em
+.deg225 { transform: rotate(225deg) translateX(24.5em) rotate(-225deg); } //16 24.5em
+.deg315 { transform: rotate(315deg) translateX(24.5em) rotate(-315deg); } //16 24.5em
 
 
 .round-button {
-  width: 85px;
+  width: 150%;//85px;
 }
 
 .round-button a {
@@ -162,6 +312,15 @@ body {
   background: url('/assets/images/effects-background-faded.png'); 
   background-size: 300%;
   background-position: 60% 15%;
+  transition: 1s ease-in-out;
+}
+
+.round-button-effects:active {
+    border-color: #ff3e3e;
+}
+
+.round-button-effects:hover {
+    border-color: #ff3e3e;
 }
 
 .round-button-vocal {
@@ -174,6 +333,15 @@ body {
   background: url('/assets/images/vocal-background-faded.png'); 
   background-size: 300%;
   background-position: 65% 20%;
+  transition: 1s ease-in-out;
+}
+
+.round-button-vocal:active {
+    border-color: #ff3e3e;
+}
+
+.round-button-vocal:hover {
+    border-color: #ff3e3e;
 }
 
 .round-button-eq {
@@ -186,6 +354,15 @@ body {
   background: url('/assets/images/eq-background-faded.png'); 
   background-size: 300%;
   background-position: 65% 10%;
+  transition: 1s ease-in-out;
+}
+
+.round-button-eq:active {
+    border-color: #ff3e3e;
+}
+
+.round-button-eq:hover {
+    border-color: #ff3e3e;
 }
 
 .round-button-bass {
@@ -198,6 +375,15 @@ body {
   background: url('/assets/images/bass-background-faded.png'); 
   background-size: 300%;
   background-position: 37% 43%;
+  transition: 1s ease-in-out;
+}
+
+.round-button-bass:active {
+    border-color: #ff3e3e;
+}
+
+.round-button-bass:hover {
+    border-color: #ff3e3e;
 }
 
 .round-button-random {
@@ -210,6 +396,15 @@ body {
   background: url('/assets/images/random-background-faded.png'); 
   background-size: 300%;
   background-position: 50%;
+  transition: 1s ease-in-out;
+}
+
+.round-button-random:active {
+    border-color: #ff3e3e;
+}
+
+.round-button-random:hover {
+    border-color: #ff3e3e;
 }
 
 .round-button-melody {
@@ -222,12 +417,22 @@ body {
   background: url('/assets/images/melody-background-faded.png'); 
   background-size: 300%;
   background-position: 78% 5%;
+  transition: 1s ease-in-out;
 }
+
+.round-button-melody:active {
+    border-color: #ff3e3e;
+}
+
+.round-button-melody:hover {
+    border-color: #ff3e3e;
+}
+
 
 span.random-icon {
   background: url('/assets/images/random-icon.png') no-repeat;
-  background-size: 60%;
-  background-position: 50% 20%;
+  background-size: 75%;
+  background-position: 105% 30%;
   float: left;
   width: 83px;
   height: 83px;
@@ -240,8 +445,8 @@ span.random-icon {
 
 span.bass-icon {
   background: url('/assets/images/bass-icon.png') no-repeat;
-  background-size: 60%;
-  background-position: 50% 25%;
+  background-size: 70%;
+  background-position: 90% 45%;
   float: left;
   width: 83px;
   height: 83px;
@@ -254,8 +459,8 @@ span.bass-icon {
 
 span.vocal-icon {
   background: url('/assets/images/vocal-icon.png') no-repeat;
-  background-size: 60%;
-  background-position: 55% 20%;
+  background-size: 70%;
+  background-position: 105% 30%;
   float: left;
   width: 83px;
   height: 83px;
@@ -268,8 +473,8 @@ span.vocal-icon {
 
 span.eq-icon {
   background: url('/assets/images/eq-icon.png') no-repeat;
-  background-size: 60%;
-  background-position: 55% 20%;
+  background-size: 70%;
+  background-position: 105% 30%;
   float: left;
   width: 83px;
   height: 83px;
@@ -282,8 +487,8 @@ span.eq-icon {
 
 span.effects-icon {
   background: url('/assets/images/effects-icon.png') no-repeat;
-  background-size: 65%;
-  background-position: 50% 10%;
+  background-size: 75%;
+  background-position: 105% 20%;
   float: left;
   width: 83px;
   height: 83px;
@@ -296,8 +501,8 @@ span.effects-icon {
 
 span.melody-icon {
   background: url('/assets/images/melody-icon.png') no-repeat;
-  background-size: 60%;
-  background-position: 50% 20%;
+  background-size: 70%;
+  background-position: 95% 30%;
   float: left;
   width: 83px;
   height: 83px;
@@ -308,30 +513,32 @@ span.melody-icon {
   transition: 0.3s ease-in-out;
 }
 
-span.btn-hover:hover {
+/*span.btn-hover:hover {
   background-color: rgba(100, 10, 10 , 0.4);
-}
+}*/
 
 span.btn-text-pos {
   float: left;
-  width: 85px;
-  height: 83px;
+  width: 105px;
+  height: 200px;
   z-index: 9999;
   text-align: center;
   color: #fff;
-  font-size: 1em;
-  margin-top: 65%; 
+  font-size: 1.1em;
+  margin-top: 80%; 
 }
 
 .circular-timer {
   margin: -28px -27px;
+  width: 100%;
+  height: 100%;
   //padding-top: 0.02px;
 }
 
 .user-position {
   top: 0;
   left: 0;
-  margin: -235px 10%;
+  margin: 15% 10%; //-235
 }
 
 .user {
@@ -349,7 +556,8 @@ span.btn-text-pos {
 .branding-position {
   top: 0;
   right: 0;
-  margin: -265px 75%;
+  margin: -0.5% 80%; //230
+  min-height: 50%;
 }
 
 .branding {

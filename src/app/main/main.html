@@ -9,49 +9,298 @@
     <div class="main-wrap">
       <div class="wrap">
         <div class="nba-circular-crop"> 
-          <div class="circular-timer">
+          <div class="videoWrapper">
+      <video id="Video5" loop muted>
+           <source src="/assets/videos/remix-vid-5_converted.mp4" type="video/mp4" />
+      </video> 
+      <video id="Video4" loop muted>
+           <source src="/assets/videos/remix-vid-4_converted.mp4" type="video/mp4" />
+      </video> 
+      <video id="Video3" loop muted>
+           <source src="/assets/videos/remix-vid-3_converted.mp4" type="video/mp4" />
+      </video> 
+      <video id="Video2" loop muted>
+           <source src="/assets/videos/remix-vid-2_converted.mp4" type="video/mp4" />
+      </video> 
+      <video id="Video1" loop muted>
+           <source src="/assets/videos/remix-vid-1_converted.mp4" type="video/mp4" />
+      </video> 
+
+
+<div
+   round-progress
+   max="50"
+   current="50"
+   color="#ff3e3e"
+   bgcolor="#ffffff"
+   radius="400"
+   stroke="25"
+   semi="false"
+   rounded="false"
+   clockwise="true"
+   responsive="true"
+   duration="30000"
+   animation="linearEase"
+   ></div>
+    
+  </div>
+
+
+
+  <!--<div class="wrapper-circle" data-anim="base wrapper">
+      <div class="circle" data-anim="base left"></div>
+      <div class="circle" data-anim="base right"></div>
+    </div>
+
+  <div class="circular-wrapper">
+
+         <div class="circular-timer">
+
             <circular-progress
              value="100"
              max="100"
              orientation="1"
-             radius="242"
-             stroke="25"
+             radius="250"
+             stroke="0"
              base-color="#ffffff"
              progress-color="#ff3e3e"
              iterations="1500"
              animation="easeInOutCubic"
-            ></circular-progress>
-        </div>
-      </div>
+             ></circular-progress> 
 
+           </div>
+         </div>-->
+      </div>
   <div class="buttons-buttom">
-   <a href='#' class='deg0'><div class="round-button"><div class="round-button-random"><span class="random-icon btn-hover"><span class="btn-text-pos">Random</span></span></div></div></a>   
-   <a href='#' class='deg45'><div class="round-button"><div class="round-button-vocal"><span class="vocal-icon btn-hover"><span class="btn-text-pos">Vocal</span></span></div></div></a> 
-   <a href='#' class='deg135'><div class="round-button"><div class="round-button-bass"><span class="bass-icon btn-hover"><span class="btn-text-pos">Bass</span></span></div></div></a> 
-   <a href='#' class='deg180'><div class="round-button"><div class="round-button-effects"><span class="effects-icon btn-hover"><span class="btn-text-pos">Effects</span></span></div></div></a> 
-   <a href='#' class='deg225'><div class="round-button"><div class="round-button-melody"><span class="melody-icon btn-hover"><span class="btn-text-pos">Melody</span></span></div></div></a>
-   <a href='#' class='deg315'><div class="round-button"><div class="round-button-eq"><span class="eq-icon btn-hover"><span class="btn-text-pos">EQ</span></span></div></div></a>
+      <a class="deg0 track" href="/assets/sounds/arp.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-random"><span class="random-icon btn-hover"><span class="btn-text-pos">Random</span></span></div></div></a>   
+      <a class="deg45 track" href="/assets/sounds/vox.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-vocal"><span class="vocal-icon btn-hover"><span class="btn-text-pos">Vocal</span></span></div></div></a> 
+      <a class="deg135 track" href="/assets/sounds/bass.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-bass"><span class="bass-icon btn-hover"><span class="btn-text-pos">Bass</span></span></div></div></a>
+      <a class="deg180 track" href="/assets/sounds/drums.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-effects"><span class="effects-icon btn-hover"><span class="btn-text-pos">Effects</span></span></div></div></a> 
+      <a class="deg225 track" href="/assets/sounds/synth.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-melody"><span class="melody-icon btn-hover"><span class="btn-text-pos">Melody</span></span></div></div></a>
+      <a class="deg315 track" href="/assets/sounds/perc.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-eq"><span class="eq-icon btn-hover"><span class="btn-text-pos">EQ</span></span></div></div></a>
   </div>
+   
+      <!--href="/assets/sounds/arp.wav"
+          href="/assets/sounds/vox.wav"
+          href="/assets/sounds/bass.wav"
+          href="/assets/sounds/perc.wav"
+          href="/assets/sounds/drums.wav"
+          href="/assets/sounds/synth.wav"
+          -->
+
+
  </div>
- </div>
+</div>
 
  <div class="user-position">
    <div class="user">
      <div class="left-side-wrap">
      <p class="dj">DJ</p>
     <span class="name">@TomLA232</span>
-  </div>
    </div>
+  </div>
  </div>
 
  <div class="branding-position">  
    <div class="branding">
      <div class="right-side-wrap">
-     <span class="nike-text">Nike </span><span class="nba-text">NBA </span><span class="remix-text">Remix</span>
+     <span class="nike-text">Nike</span><span class="nba-text"> NBA</span><span class="remix-text"> Remix</span>
    </div>
   </div>
  </div>
 
  </div>
 </div>
+
+
+<script>
+
+/*------------------------------------------------MOVE INTO SEPERATE FILE---------------------------------------------------*/
+
+/*var audio = {
+        buffer: {},
+        compatibility: {},
+        files: [
+            'sounds/drums.wav',
+            'sounds/bass.wav',
+            'sounds/arp.wav',
+            'sounds/perc.wav',
+            'sounds/synth.wav',
+            'sounds/vox.wav'
+        ],
+        proceed: true,
+        source_loop: {},
+        source_once: {}
+    };*/
+
+
+window.AudioContext = window.AudioContext || window.webkitAudioContext;
+
+var offset = 0;
+var context = new AudioContext();
+
+var tempo = 4.0;
+
+function playTrack(url) {
+  var request = new XMLHttpRequest();
+  request.open('GET', url, true);
+  request.responseType = 'arraybuffer';
+
+  var audiobuffer;
+
+  // Decode asynchronously
+  request.onload = function() {
+    
+    if (request.status == 200) {
+      
+      context.decodeAudioData(request.response, function(buffer) {
+        var source = context.createBufferSource();
+        source.buffer = buffer;
+        source.connect(context.destination);
+        source.loop = true;
+        console.log('context.currentTime '+context.currentTime);
+
+        if (offset == 0) {
+          source.start();
+          offset = context.currentTime;
+        } else {
+          var relativeTime = context.currentTime - offset;
+          var beats = relativeTime / tempo;
+          var remainder = beats - Math.floor(beats);
+          var delay = tempo - (remainder*tempo);
+          source.start(context.currentTime+delay,relativeTime+delay);
+        }
+
+      }, function(e) {
+        console.log('Error decoding audio data:' + e);
+      });
+    } else {
+      console.log('Audio didn\'t load successfully; error code:' + request.statusText);
+    }
+  }
+  request.send();
+}
+
+var tracks = document.getElementsByClassName('track');
+
+for (var i = 0, len = tracks.length; i < len; i++) {
+  tracks[i].addEventListener('click', function(e){
+    console.log(this.href);
+    playTrack(this.href);
+    e.preventDefault();
+  });
+}
+
+</script>
+
+
+
+
+<!--
+<script>
+  function playVideos() {
+  var noOfButtonsClicked = 0;
+  var Video1 = document.getElementById("Video1");
+  var Video2 = document.getElementById("Video2");
+  var Video3 = document.getElementById("Video3");
+  var Video4 = document.getElementById("Video4");
+  var Video5 = document.getElementById("Video5");
+
+
+    //noOfButtonsClicked = parseInt(noOfButtonsClicked)+parseInt(1);
+    var divData = document.getElementsByClassName("play");
+    //divData.innerHTML = "Number of Click: ("+cnt +")"; //remove
+    noOfButtonsClick = divData;
+  
+    if(noOfButtonsClicked === 1) {
+      Video1.play();
+  } else(noOfButtonsClicked === 2) {
+      Video2.play();
+  } else(noOfButtonsClicked === 3) {
+      Video3.play();
+  } else(noOfButtonsClicked === 4) {
+      Video4.play();
+  } else(noOfButtonsClicked === 5) {
+      Video5.play();
+  }
+}
+  
+</script>-->
+
+
+<!--<script>
+  $(".track").click(function(e) {
+   return false; 
+   e.preventDefault(); 
+ });
+</script>
+
+<script>
+  document.getElementsByClassName("buttons-bottom").addEventListener("click", function(event){
+  event.preventDefault()
+ });
+</script> 
+-->
+
+
+<script>
+var buttonsClicked = 0;
+  function vidplay() {
+      var video1 = document.getElementById("Video1");
+      var video2 = document.getElementById("Video2");
+      var video3 = document.getElementById("Video3");
+      var video4 = document.getElementById("Video4");
+      var video5 = document.getElementById("Video5");
+
+      var button = document.getElementsByClassName("round-button").value = ++buttonsClicked;
+
+
+
+      /*if (video.paused) {
+           video.play();
+           button.textContent = "||";
+       } else {
+           video.pause();
+           button.textContent = ">";
+  */
+    if (buttonsClicked === 1 ){
+    video1.play();
+    console.log("video 1 is playing");
+    } else if(buttonsClicked === 2) {
+    video2.play();
+    video1.pause();
+    video1.remove();
+    console.log("video 2 is playing")
+    } else if(buttonsClicked === 3) {
+    video3.play();
+    video2.pause();
+    video2.remove();
+    console.log("video 3 is playing")
+    }  else if(buttonsClicked === 4) {
+    video4.play();
+    video3.pause();
+    video3.remove();
+    console.log("video 4 is playing")
+    }  else if(buttonsClicked === 5) {
+    video5.play();
+    video4.pause();
+    video4.remove();
+    console.log("video 5 is playing")
+    } 
+
+
+     }
+
+  function restart() {
+      var video = document.getElementById("Video1");
+      video.currentTime = 0;
+     }
+
+  function skip(value) {
+      var video = document.getElementById("Video1");
+      video.currentTime += value;
+     }      
+
+   </script> 
+
 
