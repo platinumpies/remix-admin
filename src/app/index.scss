@@ -285,6 +285,94 @@ div[data-anim~=base] {
 .deg315 { transform: rotate(315deg) translateX(24.5em) rotate(-315deg); } //16 24.5em
 
 
+
+@media (min-width: 500px) and (max-width: 1350px) {
+.deg0 { transform: translateY(11.5em) translateX(0.5em); } /* 12em = half the width of the wrapper */ //17 25em
+.deg45 { transform: rotate(45deg) translateX(13em) translateY(-6em) rotate(-45deg); } //17 25em 
+.deg135 { transform: rotate(135deg) translateX(12em) translateY(5em) rotate(-135deg); } //17 25em
+.deg180 { transform: translateY(-24.75em); } //-16.5 -24.75em
+.deg225 { transform: rotate(225deg) translateX(22em) translateY(5em) rotate(-225deg); } //16 24.5em
+.deg315 { transform: rotate(315deg) translateX(22em) translateY(-5em) rotate(-315deg); } //16 24.5em
+
+.buttons-buttom a {
+  display: block;
+  position: absolute;
+  top: 205%; left: 32%;//34%; //40 50
+  width: 5em; 
+  height: 5em;
+  //margin: -4em;
+}
+
+.videoWrapper {
+  height: 240px;
+  width: 320px;
+}
+
+.wrap {
+  padding-top: 7%;
+}
+
+}
+
+
+@media (min-width: 1350px) and (max-width: 1400px) {
+.deg0 { transform: translateY(16.5em) translateX(2em); } /* 12em = half the width of the wrapper */ //17 25em
+.deg45 { transform: rotate(45deg) translateX(19em) translateY(-7em) rotate(-45deg); } //17 25em 
+.deg135 { transform: rotate(135deg) translateX(16em) translateY(3em) rotate(-135deg); } //17 25em
+.deg180 { transform: translateY(-24.75em) translateX(1em); } //-16.5 -24.75em
+.deg225 { transform: rotate(225deg) translateX(22.5em) translateY(2em) rotate(-225deg); } //16 24.5em
+.deg315 { transform: rotate(315deg) translateX(25em) rotate(-315deg); } //16 24.5em
+
+.buttons-buttom a {
+  display: block;
+  position: absolute;
+  top: 205%; left: 32%;//34%; //40 50
+  width: 5em; 
+  height: 5em;
+  //margin: -4em;
+}
+
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+.deg0 { transform: translateY(20.5em) translateX(3em); } /* 12em = half the width of the wrapper */ //17 25em
+.deg45 { transform: rotate(45deg) translateX(23em) translateY(-3em) rotate(-45deg); } //17 25em 
+.deg135 { transform: rotate(135deg) translateX(20em) translateY(-1em) rotate(-135deg); } //17 25em
+.deg180 { transform: translateY(-24.75em) translateX(1em); } //-16.5 -24.75em
+.deg225 { transform: rotate(225deg) translateX(22em) translateY(3em) rotate(-225deg); } //16 24.5em
+.deg315 { transform: rotate(315deg) translateX(25em) rotate(-315deg); } //16 24.5em
+
+.buttons-buttom a {
+  display: block;
+  position: absolute;
+  top: 205%; left: 32%;//34%; //40 50
+  width: 5em; 
+  height: 5em;
+  //margin: -4em;
+}
+
+}
+
+
+@media (min-width: 1600px) and (max-width: 1750px) {
+.deg0 { transform: translateY(25em) translate(1em); } /* 12em = half the width of the wrapper */ //17 25em
+.deg45 { transform: rotate(45deg) translateX(25em) rotate(-45deg); } //17 25em 
+.deg135 { transform: rotate(135deg) translateX(24.5em) translateY(-1em) rotate(-135deg); } //17 25em
+.deg180 { transform: translateY(-24.75em); } //-16.5 -24.75em
+.deg225 { transform: rotate(225deg) translateX(24.5em) rotate(-225deg); } //16 24.5em
+.deg315 { transform: rotate(315deg) translateX(24.5em) rotate(-315deg); } //16 24.5em
+
+.buttons-buttom a {
+  display: block;
+  position: absolute;
+  top: 205%; left: 38%;//34%; //40 50
+  width: 5em; 
+  height: 5em;
+  //margin: -4em;
+}
+
+}
+
 .round-button {
   width: 150%;//85px;
 }
