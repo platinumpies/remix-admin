@@ -71,8 +71,8 @@
            </div>
          </div>-->
       </div>
-  <div class="buttons-buttom">
-    <a class="deg0 track" href="/assets/sounds/arp.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-random"><div class=clickedColor><span class="random-icon btn-hover"><span class="btn-text-pos">Random</span></span></div></div></div></a>   
+<div class="buttons-buttom">
+    <a class="deg0 track" href="/assets/sounds/arp.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-random"><span class="random-icon btn-hover"><span class="btn-text-pos">Random</span></span></div></div></a>   
       <a class="deg45 track" href="/assets/sounds/vox.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-vocal"><span class="vocal-icon btn-hover"><span class="btn-text-pos">Vocal</span></span></div></div></a> 
       <a class="deg135 track" href="/assets/sounds/bass.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-bass"><span class="bass-icon btn-hover"><span class="btn-text-pos">Bass</span></span></div></div></a>
       <a class="deg180 track" href="/assets/sounds/drums.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-effects"><span class="effects-icon btn-hover"><span class="btn-text-pos">Effects</span></span></div></div></a> 
@@ -112,6 +112,21 @@
  </div>
 </div>
 
+
+<script>
+  /*--------------------FIND BETTER APPROACH--------------------*/
+$('.round-button-melody, .round-button-effects, .round-button-random, .round-button-eq, .round-button-bass, .round-button-vocal').on('click', function(e){
+  e.preventDefault();
+  $(this).css('border-color', '#ff3e3e');
+});
+
+/*
+$('.round-button-effects').on('click', function(e){
+      e.preventDefault();
+      $(this).toggleClass('myClickState');
+    }); */
+
+  </script>
 
 <script>
 
@@ -192,8 +207,6 @@ for (var i = 0, len = tracks.length; i < len; i++) {
 }
 
 </script>
-
-
 
 
 <!--

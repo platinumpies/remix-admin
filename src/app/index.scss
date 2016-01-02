@@ -226,6 +226,14 @@ div[data-anim~=base] {
   display: block;
 }
 
+.clickedColor {
+  background-color: rgba(248, 247, 216, 0.7);
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+}
+
 .buttons-buttom {
   position: relative;
   width: 24em;
@@ -373,6 +381,10 @@ div[data-anim~=base] {
 
 }
 
+
+
+
+
 .round-button {
   width: 150%;//85px;
 }
@@ -403,7 +415,7 @@ div[data-anim~=base] {
   transition: 1s ease-in-out;
 }
 
-.round-button-effects:active {
+.round-button-effects:focus {
     border-color: #ff3e3e;
 }
 
@@ -424,9 +436,10 @@ div[data-anim~=base] {
   transition: 1s ease-in-out;
 }
 
-.round-button-vocal:active {
-    border-color: #ff3e3e;
-}
+/*.round-button-vocal:active,
+.round-button-vocal:focus {
+    background: #ff3e3e;
+}*/
 
 .round-button-vocal:hover {
     border-color: #ff3e3e;
@@ -516,6 +529,9 @@ div[data-anim~=base] {
     border-color: #ff3e3e;
 }
 
+.myClickState {
+  border-color: lime;
+}
 
 span.random-icon {
   background: url('/assets/images/random-icon.png') no-repeat;
