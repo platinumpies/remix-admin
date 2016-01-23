@@ -15,7 +15,7 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 .stop-scale {
   min-width: 90em;//1200px !important;
-  max-width: 200em;//1700px !important;
+  max-width: 1800px;//1700px !important;
 }
 
 .fixer-margin {
@@ -340,10 +340,15 @@ div[data-anim~=base] {
   //margin: -4em;
 }
 
+//fixvideoP
+
+
+
 }
 
-@media (min-width: 1400px) and (max-width: 1600px) {
-.deg0 { transform: translateY(20.5em) translateX(3em); } /* 12em = half the width of the wrapper */ //17 25em
+
+@media (min-width: 1250px) and (max-width: 1550px) {
+.deg0 { transform: translateY(20.5em) translateX(3em); } /* 12em = half the width of the wrapper */ //17 25em 
 .deg45 { transform: rotate(45deg) translateX(23em) translateY(-3em) rotate(-45deg); } //17 25em 
 .deg135 { transform: rotate(135deg) translateX(20em) translateY(-1em) rotate(-135deg); } //17 25em
 .deg180 { transform: translateY(-24.75em) translateX(1em); } //-16.5 -24.75em
@@ -357,6 +362,36 @@ div[data-anim~=base] {
   width: 5em; 
   height: 5em;
   //margin: -4em;
+}
+
+.videoWrapper {
+  width: 600px;
+  height: 600px;
+}
+
+}
+
+
+@media (min-width: 1550px) and (max-width: 1600px) {
+.deg0 { transform: translateY(25em) translate(1em); } /* 12em = half the width of the wrapper */ //17 25em
+.deg45 { transform: rotate(45deg) translateX(25em) rotate(-45deg); } //17 25em 
+.deg135 { transform: rotate(135deg) translateX(24.5em) translateY(-1em) rotate(-135deg); } //17 25em
+.deg180 { transform: translateY(-24.75em); } //-16.5 -24.75em
+.deg225 { transform: rotate(225deg) translateX(24.5em) rotate(-225deg); } //16 24.5em
+.deg315 { transform: rotate(315deg) translateX(24.5em) rotate(-315deg); } //16 24.5em
+
+.buttons-buttom a {
+  display: block;
+  position: absolute;
+  top: 205%; left: 38%;//34%; //40 50
+  width: 5em; 
+  height: 5em;
+  //margin: -4em;
+}
+
+.videoWrapper {
+  width: 650px;
+  height: 650px;
 }
 
 }
@@ -379,9 +414,36 @@ div[data-anim~=base] {
   //margin: -4em;
 }
 
+.videoWrapper {
+  width: 700px;
+  height: 700px;
 }
 
+}
 
+@media (min-width: 1750px) and (max-width: 1920px) {
+.deg0 { transform: translateY(25em) translate(1em); } /* 12em = half the width of the wrapper */ //17 25em
+.deg45 { transform: rotate(45deg) translateX(25em) rotate(-45deg); } //17 25em 
+.deg135 { transform: rotate(135deg) translateX(24.5em) translateY(-1em) rotate(-135deg); } //17 25em
+.deg180 { transform: translateY(-24.75em); } //-16.5 -24.75em
+.deg225 { transform: rotate(225deg) translateX(24.5em) rotate(-225deg); } //16 24.5em
+.deg315 { transform: rotate(315deg) translateX(24.5em) rotate(-315deg); } //16 24.5em
+
+.buttons-buttom a {
+  display: block;
+  position: absolute;
+  top: 205%; left: 32%;//34%; //40 50
+  width: 5em; 
+  height: 5em;
+  //margin: -4em;
+}
+
+.videoWrapper {
+  width: 700px;
+  height: 700px;
+}
+
+}
 
 
 
