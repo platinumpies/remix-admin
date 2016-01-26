@@ -15,6 +15,16 @@
       .otherwise({
         redirectTo: '/'
       });
+     // })
+     // .when('/finalScreen', {
+     //    templateUrl: 'app/main/finalScreen.html',
+     //    controller: 'finalScreenController'  
+     // });
   }
+
+ // app.controller('finalScreenController', function($scope) {
+ //   $scope.pageClass = 'finalScreenController';
+                
+//});
 
 })();

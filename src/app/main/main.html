@@ -1,3 +1,4 @@
+<html ng-app"remixAdmin">
 <div class="container grey-fill stop-scale">
 
   <div>
@@ -71,7 +72,7 @@
            </div>
          </div>-->
       </div>
-<div class="buttons-buttom">
+<div class="buttons-buttom" ng-click"toggle = !toggle">
     <a class="deg0 track" href="/assets/sounds/arp.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-random"><span class="random-icon btn-hover"><span class="btn-text-pos">Random</span></span></div></div></a>   
       <a class="deg45 track" href="/assets/sounds/vox.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-vocal"><span class="vocal-icon btn-hover"><span class="btn-text-pos">Vocal</span></span></div></div></a> 
       <a class="deg135 track" href="/assets/sounds/bass.wav"><div class="round-button" onclick="vidplay()"><div class="round-button-bass"><span class="bass-icon btn-hover"><span class="btn-text-pos">Bass</span></span></div></div></a>
@@ -153,6 +154,7 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
 var offset = 0;
 var context = new AudioContext();
+var source;  
 
 var tempo = 2.0;
 
@@ -169,7 +171,7 @@ function playTrack(url) {
     if (request.status == 200) {
       
       context.decodeAudioData(request.response, function(buffer) {
-        var source = context.createBufferSource();
+        source = context.createBufferSource();
         source.buffer = buffer;
         source.connect(context.destination);
         source.loop = true;
@@ -185,6 +187,7 @@ function playTrack(url) {
           var delay = tempo - (remainder*tempo);
           source.start(context.currentTime+delay,relativeTime+delay);
         }
+
 
       }, function(e) {
         console.log('Error decoding audio data:' + e);
@@ -203,6 +206,8 @@ for (var i = 0, len = tracks.length; i < len; i++) {
     console.log(this.href);
     playTrack(this.href);
     e.preventDefault();
+
+
   });
 }
 
@@ -267,8 +272,6 @@ var buttonsClicked = 0;
 
       var button = document.getElementsByClassName("round-button").value = ++buttonsClicked;
 
-
-
       /*if (video.paused) {
            video.play();
            button.textContent = "||";
@@ -300,9 +303,7 @@ var buttonsClicked = 0;
     video4.remove();
     console.log("video 5 is playing")
     } 
-
-
-     }
+  }
 
   function restart() {
       var video = document.getElementById("Video1");
@@ -316,4 +317,4 @@ var buttonsClicked = 0;
 
    </script> 
 
-
+ </html>

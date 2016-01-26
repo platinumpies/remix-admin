@@ -8,6 +8,7 @@
   /** @ngInject */
   function MainController($timeout, webDevTec, toastr) {
     var vm = this;
+    vm.toggle = true;
 
     vm.awesomeThings = [];
     vm.classAnimation = '';
