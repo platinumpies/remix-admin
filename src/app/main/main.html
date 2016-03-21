@@ -343,9 +343,19 @@ var buttonsClicked = 0;
        loadingHtml: "<div class='spinner'><div class='double-bounce1'><div class='double-bounce2'></div></div>"
  });
 
-setTimeout(function () {
-loading_screen.finish();
-}, 10000);
+   jQuery(document).ready(function (){
+       setTimeout(function(){
+         loading_screen.finish();
+         }, 5000);
+         
+      //   });
+     // loading_screen.finish(); 
+       });
+      //loading_screen.finish(); 
+      // })   
+//setTimeout(function () {
+//loading_screen.finish();
+//}, 10000);
 
 
  </script>
