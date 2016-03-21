@@ -335,4 +335,19 @@ var buttonsClicked = 0;
 
    </script> 
 
+   <script type="text/javascript">
+
+       var loading_screen = pleaseWait({
+       logo: "assets/images/smirnoff-logo.png",
+       backgroundColor: '#fff5c3',
+       loadingHtml: "<div class='spinner'><div class='double-bounce1'><div class='double-bounce2'></div></div>"
+ });
+
+setTimeout(function () {
+loading_screen.finish();
+}, 10000);
+
+
+ </script>
+
  </html>
